@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: yv48cdrmd-go-repository
+spec:
+  url: https://github.com/rhtap-qe-jsmid/yv48cdrmd-go

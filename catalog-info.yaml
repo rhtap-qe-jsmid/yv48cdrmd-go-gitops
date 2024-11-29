@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: yv48cdrmd-go-gitops
+  description: This is GitOps manifest for yv48cdrmd-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: yv48cdrmd-go
+    backstage.io/kubernetes-id: yv48cdrmd-go 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: yv48cdrmd-go-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:yv48cdrmd-go
